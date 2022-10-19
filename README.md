@@ -1,22 +1,51 @@
-# Tassel
+# I2P Bookmarks
 
-Tassel is a template project for adding bookmarks to a browser in an updatable,
-invisible way. It's called "Tassel" because it's designed to be unobtrusive and
-attached to a browser to provide bookmarks, sort of like those ribbons you
-sometimes find in old encyclopedias and stuff.
+Uses [Tassel](https://eyedeekay.github.io/Tassel) to generate automatically-installing
+bookmarks related to I2P.
 
-## Usage
-
-This tool will be useful to you if you want to automate bookmark distribution.
-To use it:
-
-1. Start by forking this project.
-2. Open the `config.sh` file in your choice of text editor and change the values
- to reflect those used by your project or organization. These will be added to
- the manifest.json and are important for your organizational needs.
-3. Open the `bookmarks.json` and change the `Directory` field to the directory
- name where you want to place bookmarks.
-4. In the `bookmarks.json` file, add the bookmarks you want to the `bookmarks[]`
- array. You can add any valid `bookmarks.createDetails` object.
-5. Run `make.sh` to generate a `${TASSEL_NAME}.zip` file which is ready for submission
- to `addons.mozilla.org`
+```json
+{
+    "Directory": "I2P Bookmarks",
+    "bookmarks": [{
+            "title": "I2P Hostname Directory",
+            "url": "http://botbob.i2p"
+        },
+        {
+            "title": "I2P Development Discussions",
+            "url": "http://zzz.i2p"
+        },
+        {
+            "title": "I2P Community Forum",
+            "url": "http://i2pforum.i2p"
+        },
+        {
+            "title": "Legwork Search Engine",
+            "url": "http://legwork.i2p"
+        },
+        {
+            "title": "I2P Stats",
+            "url": "https://stats.i2p"
+        },
+        {
+            "title": "I2P Metrics",
+            "url": "http://placeholder.i2p"
+        },
+        {
+            "title": "IDK's homepage",
+            "url": "https://idk.i2p"
+        },
+        {
+            "title": "Postman's Bittorrent Tracker",
+            "url": "http://tracker2.postman.i2p"
+        },
+        {
+            "title": "Postman's Headquarters",
+            "url": "http://hq.postman.i2p"
+        },
+        {
+            "title": "Placeholder",
+            "url": "http://placeholder.i2p"
+        }
+    ]
+}
+```

@@ -1,10 +1,10 @@
 <html>
   <head>
     <title>
-      Tassel
+      I2P Bookmarks
     </title>
     <meta name="author" content="eyedeekay" />
-    <meta name="description" content="Tassel" />
+    <meta name="description" content="I2P-Bookmarks" />
     <meta name="keywords" content="main" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="showhider.css" />
@@ -39,77 +39,61 @@
       /
     </a>
     <h1>
-      Tassel
+      I2P Bookmarks
     </h1>
     <p>
-      Tassel is a template project for adding bookmarks to a browser in an updatable,
-      invisible way. It&rsquo;s called &ldquo;Tassel&rdquo; because it&rsquo;s designed to be unobtrusive and
-      attached to a browser to provide bookmarks, sort of like those ribbons you
-      sometimes find in old encyclopedias and stuff.
+      Uses
+      <a href="https://eyedeekay.github.io/Tassel">
+        Tassel
+      </a>
+      to generate automatically-installing
+      bookmarks related to I2P.
     </p>
-    <h2>
-      Usage
-    </h2>
-    <p>
-      This tool will be useful to you if you want to automate bookmark distribution.
-      To use it:
-    </p>
-    <ol>
-      <li>
-        Start by forking this project.
-      </li>
-      <li>
-        Open the
-        <code>
-          config.sh
-        </code>
-        file in your choice of text editor and change the values
-        to reflect those used by your project or organization. These will be added to
-        the manifest.json and are important for your organizational needs.
-      </li>
-      <li>
-        Open the
-        <code>
-          bookmarks.json
-        </code>
-        and change the
-        <code>
-          Directory
-        </code>
-        field to the directory
-        name where you want to place bookmarks.
-      </li>
-      <li>
-        In the
-        <code>
-          bookmarks.json
-        </code>
-        file, add the bookmarks you want to the
-        <code>
-          bookmarks[]
-        </code>
-        array. You can add any valid
-        <code>
-          bookmarks.createDetails
-        </code>
-        object.
-      </li>
-      <li>
-        Run
-        <code>
-          make.sh
-        </code>
-        to generate a
-        <code>
-          ${TASSEL_NAME}.zip
-        </code>
-        file which is ready for submission
-        to
-        <code>
-          addons.mozilla.org
-        </code>
-      </li>
-    </ol>
+    <pre><code class="language-json">{
+    &quot;Directory&quot;: &quot;I2P Bookmarks&quot;,
+    &quot;bookmarks&quot;: [{
+            &quot;title&quot;: &quot;I2P Hostname Directory&quot;,
+            &quot;url&quot;: &quot;http://botbob.i2p&quot;
+        },
+        {
+            &quot;title&quot;: &quot;I2P Development Discussions&quot;,
+            &quot;url&quot;: &quot;http://zzz.i2p&quot;
+        },
+        {
+            &quot;title&quot;: &quot;I2P Community Forum&quot;,
+            &quot;url&quot;: &quot;http://i2pforum.i2p&quot;
+        },
+        {
+            &quot;title&quot;: &quot;Legwork Search Engine&quot;,
+            &quot;url&quot;: &quot;http://legwork.i2p&quot;
+        },
+        {
+            &quot;title&quot;: &quot;I2P Stats&quot;,
+            &quot;url&quot;: &quot;https://stats.i2p&quot;
+        },
+        {
+            &quot;title&quot;: &quot;I2P Metrics&quot;,
+            &quot;url&quot;: &quot;http://placeholder.i2p&quot;
+        },
+        {
+            &quot;title&quot;: &quot;IDK's homepage&quot;,
+            &quot;url&quot;: &quot;https://idk.i2p&quot;
+        },
+        {
+            &quot;title&quot;: &quot;Postman's Bittorrent Tracker&quot;,
+            &quot;url&quot;: &quot;http://tracker2.postman.i2p&quot;
+        },
+        {
+            &quot;title&quot;: &quot;Postman's Headquarters&quot;,
+            &quot;url&quot;: &quot;http://hq.postman.i2p&quot;
+        },
+        {
+            &quot;title&quot;: &quot;Placeholder&quot;,
+            &quot;url&quot;: &quot;http://placeholder.i2p&quot;
+        }
+    ]
+}
+</code></pre>
     <div id="sourcecode">
       <span id="sourcehead">
         <strong>
@@ -118,8 +102,8 @@
       </span>
       <ul>
         <li>
-          <a href="https://github.com/eyedeekay/Tassel.git">
-            Source Repository: (https://github.com/eyedeekay/Tassel.git)
+          <a href="https://github.com/eyedeekay/I2P-Bookmarks">
+            Source Repository: (https://github.com/eyedeekay/I2P-Bookmarks)
           </a>
         </li>
       </ul>
