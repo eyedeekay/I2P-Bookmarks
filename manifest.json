@@ -1,1 +1,26 @@
-{ "browser_specific_settings": { "gecko": { "id": "tassel@eyedeekay.github.io", "strict_min_version": "100.0" } }, "manifest_version": 2, "name": "tassel", "version": "0.0.1", "description": "Template project for adding bookmarks to a web browser with an extension", "homepage_url": "https://github.com/eyedeekay/Tassel", "icons": { "48": "icons/tassel.png", "96": "icons/tassel@2x.png" }, "permissions": ["bookmarks", "management"], "background": { "scripts": ["background.js"] } }
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "I2PBookmarks@eyedeekay.github.io",
+      "strict_min_version": "100.0"
+    }
+  },
+  "manifest_version": 2,
+  "name": "I2PBookmarks",
+  "version": "0.0.1",
+  "description": "Automatically adds I2P Bookmarks to any browser supporting WebExtensions",
+  "homepage_url": "https://github.com/eyedeekay/I2P-Bookmarks",
+  "icons": {
+    "48": "icons/tassel.png",
+    "96": "icons/tassel@2x.png"
+  },
+  "permissions": [
+    "bookmarks",
+    "management"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
