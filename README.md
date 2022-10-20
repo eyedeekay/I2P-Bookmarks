@@ -8,7 +8,7 @@ bookmarks related to I2P.
     "Directory": "I2P Bookmarks",
     "bookmarks": [{
             "title": "I2P Hostname Directory",
-            "url": "http://botbob.i2p"
+            "url": "http://notbob.i2p"
         },
         {
             "title": "I2P Development Discussions",
